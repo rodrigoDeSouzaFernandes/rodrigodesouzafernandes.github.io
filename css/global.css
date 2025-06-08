@@ -1,0 +1,74 @@
+:root {
+    --default-max-width: 1200px;
+    --default-font-color: #2B2B2B
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #2B2B2B;
+}
+
+body>section {
+    padding-inline: clamp(20px, 5vw, 80px);
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animated-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes font-color-white {
+    50% {
+        color: #FFF;
+    }
+
+    100% {
+        color: currentColor;
+    }
+}
+
+@keyframes font-white-to-red {
+    50% {
+        color: #FFF;
+    }
+
+    100% {
+        color: #B22222;
+    }
+}
+
+@keyframes font-white-to-blue {
+    50% {
+        color: #FFF;
+    }
+
+    100% {
+        color: #2F6193;
+    }
+}

@@ -1,0 +1,73 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg,
+            #000,
+            #000,
+            #2F6193,
+            #fff);
+    background-size: 350% 350%;
+    animation: animated-bg 5s ease both;
+}
+
+.hero .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    max-width: var(--default-max-width);
+}
+
+.hero .hero_greeting {
+    font-size: 24px;
+    animation: slide-in 1s both, font-color-white 5s both;
+}
+
+.hero h1 {
+    font-size: 36px;
+    animation: slide-in 1s both 1s, font-color-white 5s both 0s;
+
+}
+
+.hero h1 span {
+    animation: font-white-to-blue 5s both 0s;
+}
+
+.hero .hero_subtitle {
+    font-size: 24px;
+    animation: slide-in 1s both 2s, font-color-white 5s both 0s;
+}
+
+.hero .hero_subtitle span {
+    font-weight: 600;
+    animation: font-white-to-red 5s both 0s;
+
+}
+
+.img_box {
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+    /* overflow: hidden; */
+    border-radius: 50%;
+}
+
+.hero .profile_pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px #030303;
+    object-fit: contain;
+    object-position: top;
+    background: linear-gradient(135deg, #EDED3E, #E5BF20);
+    transition: scale .5s, box-shadow .5s, object-position 1s;
+}
+
+.img_box:hover .profile_pic {
+
+    scale: 1.05;
+    box-shadow: 10px 10px 30px #030303;
+    transform: rotateX(60deg)
+}
