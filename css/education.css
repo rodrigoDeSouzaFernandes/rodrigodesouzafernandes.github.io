@@ -16,6 +16,9 @@
     grid-template-columns: auto 1fr;
     gap: 0 2rem;
     border-radius: 8px;
+    animation: slide-in, fade-in;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
 }
 
 #education .item img {

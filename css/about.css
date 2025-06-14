@@ -8,6 +8,15 @@
 
 #about_me .container article p {
     margin-block: 1rem;
+    
+}
+
+#about_me .container article p,
+#about_me .container article h1 {
+    
+    animation: fade-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 
 
