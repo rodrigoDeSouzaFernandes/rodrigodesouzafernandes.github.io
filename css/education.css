@@ -18,7 +18,7 @@
     border-radius: 8px;
     animation: slide-in, fade-in;
     animation-timeline: view();
-    animation-range: entry 10% cover 30%;
+    animation-range: entry 0% cover 30%;
 }
 
 #education .item img {
