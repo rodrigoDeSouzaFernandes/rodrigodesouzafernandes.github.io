@@ -58,9 +58,8 @@
     height: 300px;
     border-radius: 100%;
     box-shadow: 5px 5px 15px #030303;
-    object-fit: contain;
+    object-fit: cover;
     object-position: top;
-    background: linear-gradient(135deg, #EDED3E, #E5BF20);
     transition: scale .5s, box-shadow .5s, object-position 1s;
 }
 
@@ -77,6 +76,8 @@
 }
 
 #hero .about_btn {
+    cursor: pointer;
+    display: flex;
     background-color: var(--color-primary);
     color: white;
     padding: .5rem 2rem;
@@ -99,19 +100,22 @@
 }
 
 #hero .about_btn {
+    margin-block: 1rem;
+    width: fit-content;
     background-color: var(--color-primary);
     color: white;
     padding: .5rem 2rem;
     border-radius: 8px;
     letter-spacing: 2px;
     animation: fade-in 0.5s linear 3s both;
-    transition: 
-        background-color .25s, 
+    transition:
+        background-color .25s,
         color .25s,
         transform 0.1s,
         box-shadow 0.1s;
     border: 1px solid var(--color-primary);
     box-shadow: 0 3px 0 var(--color-primary);
+    text-decoration: none;
 }
 
 #hero .about_btn:hover {
