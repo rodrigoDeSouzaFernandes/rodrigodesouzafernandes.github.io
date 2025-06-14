@@ -1,4 +1,4 @@
-.hero {
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,7 @@
     animation: animated-bg 5s ease both;
 }
 
-.hero .content {
+#hero .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,41 +20,40 @@
     max-width: var(--default-max-width);
 }
 
-.hero .hero_greeting {
+#hero .hero_greeting {
     font-size: 24px;
     animation: slide-in 1s both, font-color-white 5s both;
 }
 
-.hero h1 {
+#hero h1 {
     font-size: 36px;
-    animation: slide-in 1s both 1s, font-color-white 5s both 0s;
+    animation: slide-in 1s both 1s, font-white-to-blue 5s both 0s;
 
 }
 
-.hero h1 span {
-    animation: font-white-to-blue 5s both 0s;
-}
 
-.hero .hero_subtitle {
+#hero .hero_subtitle {
     font-size: 24px;
     animation: slide-in 1s both 2s, font-color-white 5s both 0s;
 }
 
-.hero .hero_subtitle span {
+#hero .hero_subtitle span {
     font-weight: 600;
     animation: font-white-to-red 5s both 0s;
 
 }
 
-.img_box {
+#hero .img_box {
     perspective: 1000px;
-    width: 300px;
-    height: 300px;
-    /* overflow: hidden; */
+    width: 310px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
 }
 
-.hero .profile_pic {
+#hero .profile_pic {
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -65,9 +64,63 @@
     transition: scale .5s, box-shadow .5s, object-position 1s;
 }
 
-.img_box:hover .profile_pic {
-
+#hero .img_box:hover .profile_pic {
     scale: 1.05;
     box-shadow: 10px 10px 30px #030303;
-    transform: rotateX(60deg)
+}
+
+#hero .about_btn_wrapper {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#hero .about_btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    animation: fade-in 0.5s linear 3s both;
+    transition: background-color .25s, color .25s;
+    border: 1px solid var(--color-primary);
+}
+
+#hero .about_btn:hover {
+    background-color: white;
+    color: var(--color-primary);
+    box-shadow: inset -1px -1px 1px grey;
+
+}
+
+#hero .about_btn:active {
+    box-shadow: none;
+}
+
+#hero .about_btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    animation: fade-in 0.5s linear 3s both;
+    transition: 
+        background-color .25s, 
+        color .25s,
+        transform 0.1s,
+        box-shadow 0.1s;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 3px 0 var(--color-primary);
+}
+
+#hero .about_btn:hover {
+    background-color: white;
+    color: var(--color-primary);
+    box-shadow: inset -1px -1px 1px grey, 0 2px 0 var(--color-primary);
+}
+
+#hero .about_btn:active {
+    transform: translateY(2px);
+    box-shadow: inset -1px -1px 1px grey;
 }

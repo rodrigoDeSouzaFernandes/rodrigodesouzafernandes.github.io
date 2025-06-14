@@ -1,6 +1,9 @@
 :root {
     --default-max-width: 1200px;
-    --default-font-color: #2B2B2B
+    --default-font-color: #2B2B2B;
+
+    --color-primary: #2F6193;
+    --color-red: #B22222;
 }
 
 * {
@@ -12,63 +15,14 @@
 body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: #2B2B2B;
+    color: var(--default-font-color);
 }
 
 body>section {
     padding-inline: clamp(20px, 5vw, 80px);
 }
 
-@keyframes slide-in {
-    from {
-        transform: translateX(-100vw);
-    }
-
-    to {
-        transform: translateX(0);
-    }
+button {
+    cursor: pointer;
 }
 
-@keyframes animated-bg {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes font-color-white {
-    50% {
-        color: #FFF;
-    }
-
-    100% {
-        color: currentColor;
-    }
-}
-
-@keyframes font-white-to-red {
-    50% {
-        color: #FFF;
-    }
-
-    100% {
-        color: #B22222;
-    }
-}
-
-@keyframes font-white-to-blue {
-    50% {
-        color: #FFF;
-    }
-
-    100% {
-        color: #2F6193;
-    }
-}

@@ -1,0 +1,63 @@
+@keyframes slide-in {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animated-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes font-color-white {
+    50% {
+        color: #FFF;
+    }
+
+    100% {
+        color: currentColor;
+    }
+}
+
+@keyframes font-white-to-red {
+    50% {
+        color: #FFF;
+    }
+
+    100% {
+        color: var(--color-red);
+    }
+}
+
+@keyframes font-white-to-blue {
+    50% {
+        color: #FFF;
+    }
+
+    100% {
+        color: var(--color-primary);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
