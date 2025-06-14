@@ -1,5 +1,6 @@
 :root {
     --default-max-width: 1200px;
+    --container-max-width: 800px;
     --default-font-color: #2B2B2B;
 
     --color-primary: #2F6193;
@@ -22,6 +23,10 @@ body {
     color: var(--default-font-color);
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 body>section {
     padding-inline: clamp(20px, 5vw, 80px);
 }
@@ -30,3 +35,8 @@ button {
     cursor: pointer;
 }
 
+.container {
+    max-width: var(--container-max-width);
+    margin: auto;
+    padding-block: 5rem;
+}

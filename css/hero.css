@@ -11,7 +11,7 @@
     animation: animated-bg 5s ease both;
 }
 
-#hero .content {
+#hero .container {
     display: flex;
     align-items: center;
     justify-content: space-between;

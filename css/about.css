@@ -3,12 +3,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    max-width: var(--default-max-width);
     gap: 2rem;
-}
-
-#about_me .container article {
-    max-width: 50%;
 }
 
 #about_me .container article p {
@@ -17,13 +12,14 @@
 
 
 #about_me .container img {
+    width: 150px;
     transition: filter .5s;
-    filter: drop-shadow(3px 3px 5px black) grayscale(90%);
+    filter: drop-shadow(3px 3px 300px black) grayscale(90%);
     position: sticky;
     margin-top: 2rem;
     top: 50px;
 }
 
 #about_me .container img:hover {
-    filter: drop-shadow(5px 5px 5px black) grayscale(0%);
+    filter: drop-shadow(5px 5px 5px rgb(122, 122, 122)) grayscale(0%);
 }
