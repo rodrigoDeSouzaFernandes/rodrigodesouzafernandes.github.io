@@ -1,7 +1,7 @@
 #about_me .container {
     padding-block: 6rem;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     gap: 2rem;
 }
@@ -26,7 +26,8 @@
     filter: drop-shadow(3px 3px 300px black) grayscale(90%);
     position: sticky;
     margin-top: 2rem;
-    top: 50px;
+    /* top: 100vh; */
+    bottom: 0;
 }
 
 #about_me .container img:hover {
