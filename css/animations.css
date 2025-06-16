@@ -53,11 +53,38 @@
 }
 
 @keyframes fade-in {
-    from {
+    0% {
+        opacity: 0;
+    }
+    50% {
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 1;
     }
+}
+
+/* Classes para animações com Javascript */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
 }

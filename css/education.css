@@ -1,40 +1,47 @@
-#education {
+.card_list {
     background-color: #ebebeb;
     border-top: 2rem solid var(--color-primary);
-    border-bottom: 2rem solid var(--color-primary);
+    /* border-bottom: 2rem solid var(--color-primary); */
 }
 
 
-#education h1 {
+.card_list h1 {
     padding-block: 2rem;
 }
 
 
-#education .item {
+.card_list .card {
     padding: 1rem;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0 2rem;
     border-radius: 8px;
-    animation: slide-in, fade-in;
+    /* animation: slide-in, fade-in;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 30%; */
 }
 
-#education .item img {
+.card_list .card img {
     width: 100px;
     border-radius: 8px;
     grid-row: 1 / span 3;
     box-shadow: 5px 5px 10px rgb(160, 160, 160);
 }
 
-#education .item :not(img) {
+.card_list .card :not(img) {
     grid-column: 2;
 }
 
-#education .item .description {
+.card_list .card .description {
     
     padding: 1rem 0;
+    color: #666;
+  
+}
+
+.card_list .card ul.description {
+    
+    padding: 1rem 0 1rem 1rem;
     color: #666;
   
 }

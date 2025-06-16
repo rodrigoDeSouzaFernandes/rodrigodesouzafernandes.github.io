@@ -61,7 +61,7 @@
     object-fit: cover;
     object-position: top;
     transition: scale .5s, box-shadow .5s, object-position 1s;
-    animation: rotate 3.5s linear
+    animation: fade-in 1s linear 1s both
 }
 
 #hero .img_box:hover .profile_pic {
@@ -128,14 +128,4 @@
 #hero .about_btn:active {
     transform: translateY(2px);
     box-shadow: inset -1px -1px 1px grey;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotatex(0deg)
-    }
-    to {
-        transform: rotatex(-720deg)
-
-    }
 }

@@ -11,13 +11,12 @@
 
 }
 
-#about_me .container article p,
+/* #about_me .container article p,
 #about_me .container article h1 {
-
     animation: fade-in ease-out;
     animation-timeline: view();
     animation-range: entry 0% cover 60%;
-}
+} */
 
 
 #about_me .container img {
