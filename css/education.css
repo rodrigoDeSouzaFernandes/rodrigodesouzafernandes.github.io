@@ -1,7 +1,6 @@
 .card_list {
     background-color: #ebebeb;
     border-top: 2rem solid var(--color-primary);
-    /* border-bottom: 2rem solid var(--color-primary); */
 }
 
 
@@ -16,9 +15,7 @@
     grid-template-columns: auto 1fr;
     gap: 0 2rem;
     border-radius: 8px;
-    /* animation: slide-in, fade-in;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%; */
+
 }
 
 .card_list .card img {
@@ -33,16 +30,15 @@
 }
 
 .card_list .card .description {
-    
+
     padding: 1rem 0;
     color: #666;
-  
+
 }
 
 .card_list .card ul.description {
-    
+
     padding: 1rem 0 1rem 1rem;
     color: #666;
-  
-}
 
+}
