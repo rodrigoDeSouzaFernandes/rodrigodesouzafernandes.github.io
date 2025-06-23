@@ -1,3 +1,7 @@
+html {
+    background-color: #ebebeb;
+}
+
 .card_list {
     background-color: #ebebeb;
     border-top: 2rem solid var(--color-primary);

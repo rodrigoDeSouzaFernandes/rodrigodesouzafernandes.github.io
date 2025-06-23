@@ -1,6 +1,6 @@
 const elements = document.querySelectorAll(".animate");
 
-const observer = new IntersectionObserver(
+const animationObserver = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -16,5 +16,5 @@ const observer = new IntersectionObserver(
 );
 
 elements.forEach((elem) => {
-  observer.observe(elem);
+  animationObserver.observe(elem);
 });
