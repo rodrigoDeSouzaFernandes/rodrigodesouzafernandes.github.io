@@ -27,8 +27,6 @@ const visibilityObserver = new IntersectionObserver((entries, observer) => {
 
 headerVisibilityObserver.observe(hero)
 
-console.log(projects)
-
 projects.forEach(project => {
   visibilityObserver.observe(project)
 })

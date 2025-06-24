@@ -19,8 +19,3 @@ container.addEventListener("mousemove", (e) => {
 container.addEventListener("mouseleave", () => {
   card.style.transform = "rotateX(0deg) rotateY(0deg)";
 });
-
-
-container.addEventListener("", () => {
-  console.log('teste')
-})
