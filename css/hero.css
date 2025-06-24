@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(270deg,
-            #000,
-            #000,
+            var(--color-black),
+            var(--color-black),
             #2F6193,
             #fff);
     background-size: 350% 350%;

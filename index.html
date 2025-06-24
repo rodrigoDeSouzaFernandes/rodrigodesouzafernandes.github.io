@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./css/hero.css" />
   <link rel="stylesheet" href="./css/about.css" />
   <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/projects.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,12 +23,12 @@
 
   <script defer src="./js/hero.js"></script>
   <script defer src="./js/animationObserver.js"></script>
-  <script defer src="./js/headerVisibilityObserver.js"></script>
+  <script defer src="./js/visibilityObserver.js"></script>
 
 </head>
 
 <body>
-<app-header></app-header>
+  <app-header></app-header>
   <section id="hero">
     <div class="container">
       <div class="title">
@@ -102,7 +103,163 @@
       <img src="./assets/images/rodrigo-fullbody.png" alt="rodrigo" />
     </div>
   </section>
+  <section id="projects">
+    <div class="container">
+
+      <h1>Projetos</h1>
+      <p class="subtitle">
+        Nos últimos anos, estive totalmente focado no desenvolvimento de <u>projetos reais no ambiente profissional</u>,
+        como
+        um <b>e-commerce</b>, um <b>ERP</b> para gestão de processos empresariais e também o desenvolvimento de <b>sites
+          institucionais</b>. Esse foco na construção de soluções para o mercado, lidando com demandas reais, prazos e
+        desafios técnicos, acabou limitando meu tempo para criar projetos pessoais. Ainda assim, sempre que possível,
+        pretendo desenvolver novos projetos para este portfólio, seja para estudar novas tecnologias, seja para colocar
+        ideias em prática.
+      </p>
+      <div class="projects-list">
+        <div class="project-card grow-up">
+          <img src="./assets/projects/ionicpokeapp.gif" />
+          <div class="info">
+            <div class="top">
+              <h2>PókeApp</h2>
+              <div class="main-technologies">
+                <span>Angular</span>
+                <span>Ionic</span>
+                <span>TypeScript</span>
+                <span>Sass</span>
+              </div>
+            </div>
+            <p class="description">
+              Projeto simples que consome a API do Pokémon, desenvolvido para aprimorar minhas habilidades em Angular e
+              Ionic.
+              <br>
+              O código está organizado em componentes por função (lista, detalhes, favoritos e cards), com um
+              serviço centralizado para chamadas HTTP, usando injeção de dependência para facilitar testes e
+              reutilização.
+              <br>
+
+              A interface é limpa, simples e responsiva, focada na melhor experiência do usuário. Priorizei código claro
+              e
+              modular, aplicando padrões como Service Pattern, Dependency Injection, Observer Pattern com RxJS e
+              Separation of Concerns para manter a lógica desacoplada da apresentação.
+              <br>
+              Implementei testes unitários com
+              mocks, que garantem qualidade sem depender da API real.
+            </p>
+
+          </div>
+
+        </div>
+        <div class="project-card grow-up">
+          <img src="./assets/projects/recipesapp.jpeg" />
+          <div class="info">
+            <div class="">
+
+            </div>
+            <div class="top">
+
+              <h2>App de receitas</h2>
+              <div class="main-technologies">
+                <span>React</span>
+                <span>Javascript</span>
+              </div>
+            </div>
+            <p class="description">
+              Este foi o último projeto do módulo de front-end na Trybe, com uma proposta diferente dos anteriores: o
+              desenvolvimento voltado para mobile. Foi, até aquele momento, o projeto mais completo que desenvolvi,
+              aplicando na prática tudo que aprendi nos seis primeiros meses de contato com programação.
+              <br>
+              O desenvolvimento foi em grupo, junto com Douglas Ferreira e Daniel de Sousa Rodrigues. Optamos por
+              utilizar Context API para gestão de estado e comunicação entre componentes. Trabalhamos com metodologias
+              ágeis, cumprindo e até antecipando nossas metas — finalizamos o projeto dois dias antes do prazo.
+              <br>
+
+              O layout foi todo construído com CSS puro, com exceção do carousel na página de detalhes, onde utilizamos
+              uma biblioteca para facilitar. Por ser um projeto desenvolvido durante minha fase inicial nos estudos, a
+              interface não está tão refinada, mas o foco foi consolidar os conhecimentos em lógica, React e boas
+              práticas de desenvolvimento mobile-first.
+              <br>
+
+              Foi uma experiência extremamente enriquecedora, que marcou minha evolução na transição para o
+              desenvolvimento back-end.
+            </p>
+
+          </div>
+        </div>
+        <div class="project-card grow-up">
+          <img src="./assets/projects/countdown.jpeg" />
+          <div class="info">
+            <div class="top">
+              <h2>PókeApp</h2>
+              <div class="main-technologies">
+                <span>React</span>
+                <span>Javascript</span>
+              </div>
+
+            </div>
+            <p class="description">
+              Projeto desenvolvido durante minha fase de estudos na Trybe, como resposta a um desafio proposto em sala
+              pelo instrutor Ícaro Harry para a turma 08. A ideia era criar um contador regressivo que marcasse o tempo
+              dos intervalos durante as aulas.
+              <br>
+              Aproveitei a proposta como uma oportunidade de acelerar meu aprendizado em React, que na época eu havia
+              começado a estudar há menos de uma semana. Foi um fim de semana intenso, de muitos desafios, onde pude
+              consolidar conceitos fundamentais do desenvolvimento com React, como estado, ciclo de vida dos componentes
+              e manipulação de tempo.
+              <br>
+
+              Como funcionalidade extra, incluí também uma contagem regressiva até a data da formatura da turma 08, a
+              "turma do infinito".
+              <br>
+
+              Apesar de simples visualmente, foi um projeto muito significativo na minha jornada, especialmente por
+              representar uma das minhas primeiras experiências práticas com React.
+            </p>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="abilities">
+    <div class="container">
+      <h1>Habilidades</h1>
+      
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
 </body>
+
+
 
 </html>

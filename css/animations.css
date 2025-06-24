@@ -56,6 +56,7 @@
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0;
     }
@@ -68,14 +69,14 @@
 /* Classes para animações com Javascript */
 
 .fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .slide-in {
@@ -87,4 +88,14 @@
 .slide-in.visible {
     opacity: 1;
     transform: translateX(0);
+}
+
+.grow-up {
+    scale: .9;
+    transition: opacity 1s, scale 1s;
+}
+
+.grow-up.visible {
+    opacity: 1;
+    scale: 1;
 }

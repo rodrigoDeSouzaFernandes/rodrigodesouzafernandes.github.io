@@ -4,7 +4,10 @@
     --default-font-color: #2B2B2B;
 
     --color-primary: #2F6193;
+    --color-blue: #0A66C2;
     --color-red: #B22222;
+    --color-black: #252525;
+    --color-black-transparent: #25252590;
 }
 
 html {
