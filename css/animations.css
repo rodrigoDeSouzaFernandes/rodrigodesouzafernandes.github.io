@@ -90,6 +90,17 @@
     transform: translateX(0);
 }
 
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .grow-up {
     scale: .9;
     transition: opacity 1s, scale 1s;

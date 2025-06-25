@@ -13,6 +13,32 @@ header {
   transition: transform .5s;
 }
 
+header .name {
+  color: var(--color-primary);
+  font-weight: 600;
+  width: 100%;
+}
+
+header .profile-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 60px;
+  background-size: contain;
+  background-position: top;
+  margin-right: 1rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding-block: 1rem;
+  margin-inline: 1rem;
+}
+
+
 header.visible {
   transform: translateY(0%);
 }
@@ -20,11 +46,9 @@ header.visible {
 header .navbar {
   max-width: var(--default-max-width);
   width: 100%;
-  padding: .5rem 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  gap: 2rem;
 }
 
 header .navbar a img {
@@ -32,7 +56,12 @@ header .navbar a img {
   height: 20px;
   transition: all .25s;
   filter: grayscale(100%);
-
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: white;
+  transform: translateX(-50%);
+  opacity: .5;
 
 }
 
@@ -41,17 +70,36 @@ header .navbar a {
   text-decoration: none;
   transition: all .25s;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   text-transform: capitalize;
   line-height: 1;
   font-weight: bold;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  gap: .5rem;
+  padding-inline: 20px;
 }
 
 header .navbar a:hover {
   color: #0A66C2;
+  width: 110px;
 }
 
 header .navbar a:hover img {
   filter: grayscale(0);
+  position: initial;
+  transform: translateX(0);
+  opacity: 1;
+
+}
+
+header .navbar span {
+  opacity: 0;
+}
+
+header .navbar a:hover span {
+  opacity: 1;
 }

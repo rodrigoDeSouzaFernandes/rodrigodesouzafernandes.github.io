@@ -110,8 +110,6 @@ const abilities = [
 
 const abilitiesSection = document.querySelector("#abilities").firstElementChild;
 
-console.log(abilitiesSection)
-
 Object.values(abilityType).forEach(type => {
   const abilitiesByType = abilities.filter(ability => ability.type === type);
 
@@ -142,6 +140,10 @@ Object.values(abilityType).forEach(type => {
 
   const abilityTypeWrapper = document.createElement('div')
   abilityTypeWrapper.classList.add('ability-type-wrapper')
+  abilityTypeWrapper.classList.add('animate')
+  abilityTypeWrapper.classList.add('fade-in')
+
+  animationObserver.observe(abilityTypeWrapper);
 
   abilityTypeWrapper.appendChild(title);
   abilityTypeWrapper.appendChild(abilitiesContainer);

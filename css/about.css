@@ -14,7 +14,7 @@
 
 #about_me .container img {
     width: 150px;
-    transition: filter .5s;
+    transition: opacity 1s ease-out, transform 1s ease-out, filter .5s;
     filter: drop-shadow(3px 3px 300px black) grayscale(90%);
     position: sticky;
     margin-top: 2rem;
