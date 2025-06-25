@@ -11,12 +11,20 @@ header {
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.493);
   transform: translateY(-100%);
   transition: transform .5s;
+  z-index: 1;
 }
 
 header .name {
   color: var(--color-primary);
   font-weight: 600;
-  width: 100%;
+  margin-right: auto;
+  display: flex;
+  gap: 4px;
+}
+
+
+header .lastname {
+  display: none;
 }
 
 header .profile-img {
@@ -31,11 +39,13 @@ header .profile-img {
 .header-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   max-width: 800px;
   padding-block: 1rem;
   margin-inline: 1rem;
+  gap: 1rem 0;
 }
 
 
@@ -43,18 +53,51 @@ header.visible {
   transform: translateY(0%);
 }
 
+
+
 header .navbar {
+  position: absolute;
   max-width: var(--default-max-width);
-  width: 100%;
+  transform: translateX(100%);
+  transition: all .25s;
+  background-color: white;
+  top: 100%;
+  right: 0;
+  height: 100vh;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.30);
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+header .navbar.open {
+  transform: translateX(0);
+}
+
+header .navbar.open a {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+header .navbar.open a img {
+  position: static;
+  transition: transform .25s;
+  
+}
+
+header .navbar.open a span {
+  opacity: 1;
 }
 
 header .navbar a img {
   width: 20px;
   height: 20px;
-  transition: all .25s;
   filter: grayscale(100%);
   position: absolute;
   left: 50%;
@@ -62,7 +105,6 @@ header .navbar a img {
   background-color: white;
   transform: translateX(-50%);
   opacity: .5;
-
 }
 
 header .navbar a {
@@ -71,7 +113,7 @@ header .navbar a {
   transition: all .25s;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   text-transform: capitalize;
   line-height: 1;
   font-weight: bold;
@@ -80,20 +122,15 @@ header .navbar a {
   overflow: hidden;
   position: relative;
   gap: .5rem;
-  padding-inline: 20px;
 }
 
-header .navbar a:hover {
-  color: #0A66C2;
-  width: 110px;
-}
+
 
 header .navbar a:hover img {
   filter: grayscale(0);
-  position: initial;
   transform: translateX(0);
   opacity: 1;
-
+  left: 0;
 }
 
 header .navbar span {
@@ -102,4 +139,90 @@ header .navbar span {
 
 header .navbar a:hover span {
   opacity: 1;
+  color: #0A66C2;
+}
+
+header .header-menu-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+header .header-menu-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+}
+
+header .header-menu-icon .line {
+  position: absolute;
+  display: block;
+  background-color: var(--color-black);
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  transition: all .5s;
+}
+
+header .header-menu-icon .line:nth-child(1) {
+  top: 10%;
+}
+header .header-menu-icon .line:nth-child(2) {
+  top: 50%;
+}
+header .header-menu-icon .line:nth-child(3) {
+  top: 90%;
+}
+
+header:has(.navbar.open) .header-menu-icon .line:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 50%;
+
+}
+header:has(.navbar.open) .header-menu-icon .line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
+  transform: rotate(45deg);
+  top: 50%;
+
+}
+
+@media screen and (min-width: 600px) {
+  header .lastname {
+    display: block;
+  }
+
+  header .navbar, header .navbar.open {
+    margin: initial;
+    display: flex;
+    position: static;
+    max-width: var(--default-max-width);
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: auto;
+    transform: translateX(0);
+    height: initial;
+    width: initial;
+    flex-direction: row;
+    padding: 0;
+    box-shadow: none;
+    gap: 1.5rem;
+    margin: 0;
+  }
+
+  header .navbar.open a {
+    width: 20px;    
+  }
+
+  header .header-menu-icon {
+    display: none;
+  }
+
+  header .navbar a:hover {
+    width: 100px;
+  }
 }
