@@ -1,17 +1,33 @@
 const hero = document.querySelector("#hero");
-const header = document.querySelector('header')
+let header = document.querySelector('header');
+
+customElements.whenDefined('app-header').then(() => {
+  if(!header) {
+    header = document.querySelector('header');
+    header.classList.add('visible')
+  }
+})
+
+console.log({hero, header: header})
+
+if (hero) {
+  const headerVisibilityObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        header.classList.remove("visible")
+      } else {
+        header.classList.add("visible")
+      }
+    })
+  })
+
+  headerVisibilityObserver.observe(hero)
+
+}
 
 const projects = document.querySelectorAll(".project-card");
 
-const headerVisibilityObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      header.classList.remove("visible")
-    } else {
-      header.classList.add("visible")
-    }
-  })
-})
+
 
 const visibilityObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
@@ -25,7 +41,6 @@ const visibilityObserver = new IntersectionObserver((entries, observer) => {
   threshold: .7,
 })
 
-headerVisibilityObserver.observe(hero)
 
 projects.forEach(project => {
   visibilityObserver.observe(project)

@@ -2,8 +2,8 @@ const abilityType = {
   FRONTEND: 'Front-End',
   BACKEND: 'Back-End',
   DATABASE: 'Database',
-  OTHER: 'Other',
-  STUDIES: 'Studies',
+  OTHER: 'Outros',
+  STUDIES: 'Acadêmico',
 };
 
 const abilities = [
@@ -90,36 +90,60 @@ const abilities = [
     image: './assets/abilities/mongo.png',
     type: abilityType.DATABASE,
   },
+  {
+    name: 'Docker',
+    image:'./assets/abilities/docker.jpg',
+    type: abilityType.OTHER
+  },
+  {
+    name: 'Figma',
+    image:'./assets/abilities/figma.png',
+    type: abilityType.OTHER
+  },
+  {
+    name: 'Métodos Ágeis',
+    image:'./assets/abilities/agile.webp',
+    type: abilityType.OTHER
+  }
 
 ];
 
-const abilitiesSection = document.querySelector("#abilities")
+const abilitiesSection = document.querySelector("#abilities").firstElementChild;
+
+console.log(abilitiesSection)
 
 Object.values(abilityType).forEach(type => {
+  const abilitiesByType = abilities.filter(ability => ability.type === type);
+
+  if (abilitiesByType.length === 0) return; // se não tiver, pula
+
   const title = document.createElement('h2');
   title.innerText = type;
 
   const abilitiesContainer = document.createElement('div');
   abilitiesContainer.classList.add("abilities-list");
 
-  abilities
-  .filter(ability => ability.type === type)
-  .forEach(ability => {
+  abilitiesByType.forEach(ability => {
     const container = document.createElement("div");
-    container.classList.add("ability")
+    container.classList.add("ability");
+
     const image = document.createElement("img");
-    const name = document.createElement("h3");
-  
     image.src = ability.image;
+    image.alt = ability.name;
+
+    const name = document.createElement("h3");
     name.innerText = ability.name;
-  
-  
+
     container.appendChild(image);
     container.appendChild(name);
-  
-    abilitiesContainer.appendChild(container);
 
-    abilitiesSection.appendChild(title)
-    abilitiesSection.appendChild(abilitiesContainer)
+    abilitiesContainer.appendChild(container);
   });
-})
+
+  const abilityTypeWrapper = document.createElement('div')
+  abilityTypeWrapper.classList.add('ability-type-wrapper')
+
+  abilityTypeWrapper.appendChild(title);
+  abilityTypeWrapper.appendChild(abilitiesContainer);
+  abilitiesSection.appendChild(abilityTypeWrapper);
+});

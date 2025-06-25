@@ -8,6 +8,8 @@
     --color-red: #B22222;
     --color-black: #252525;
     --color-black-transparent: #25252590;
+
+    --breakpoint-mobile: 600px;
 }
 
 html {
@@ -26,8 +28,10 @@ body {
     color: var(--default-font-color);
 }
 
-h1 {
+h1.section-title {
     font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
 }
 
 body>section {

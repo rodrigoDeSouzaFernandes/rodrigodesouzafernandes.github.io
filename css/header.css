@@ -44,7 +44,8 @@ header .navbar a {
   align-items: flex-end;
   justify-content: center;
   text-transform: capitalize;
-  line-height: 1
+  line-height: 1;
+  font-weight: bold;
 }
 
 header .navbar a:hover {
