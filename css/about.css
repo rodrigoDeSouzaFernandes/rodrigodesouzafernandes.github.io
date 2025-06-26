@@ -1,7 +1,8 @@
 #about_me .container {
     padding-block: 6rem;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
 }
@@ -16,12 +17,25 @@
     width: 150px;
     transition: opacity 1s ease-out, transform 1s ease-out, filter .5s;
     filter: drop-shadow(3px 3px 300px black) grayscale(90%);
-    position: sticky;
+    position: static;
     margin-top: 2rem;
-    /* top: 100vh; */
     bottom: 0;
 }
 
 #about_me .container img:hover {
     filter: drop-shadow(5px 5px 5px rgb(122, 122, 122)) grayscale(0%);
+}
+
+
+@media screen and (min-width: 500px) {
+    #about_me .container img {
+        position: sticky;
+    }
+
+    #about_me .container {
+        flex-direction: row;
+        align-items: flex-end;
+
+    }
+
 }

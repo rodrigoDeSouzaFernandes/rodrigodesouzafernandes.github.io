@@ -51,8 +51,8 @@
 
 #hero .img_box {
     perspective: 1000px;
-    width: 310px;
-    height: 310px;
+    width: 210px;
+    height: 210px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,6 +151,11 @@
 }
 
 @media screen and (min-width: 1000px) {
+    #hero .img_box {
+        perspective: 1000px;
+        width: 260px;
+        height: 260px;
+    }
     #hero .profile_pic {
         width: 250px;
         height: 250px;
