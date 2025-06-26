@@ -47,3 +47,24 @@ button {
     margin: auto;
     padding-block: 5rem;
 }
+
+.scroll-thin {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+.scroll-thin::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+.scroll-thin::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+    border: none;
+}
