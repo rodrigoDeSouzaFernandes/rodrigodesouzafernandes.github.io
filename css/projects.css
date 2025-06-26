@@ -14,6 +14,17 @@
 
 }
 
+#projects .project-card .description a {
+  display: block;
+  color: white;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+#projects .project-card .description a:after {
+  content: '»';
+}
+
 #projects h1 {
   margin-bottom: 2rem;
 }
