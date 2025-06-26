@@ -88,7 +88,7 @@ header .navbar.open a {
 header .navbar.open a img {
   position: static;
   transition: transform .25s;
-  
+
 }
 
 header .navbar.open a span {
@@ -131,6 +131,7 @@ header .navbar a:hover img {
   transform: translateX(0);
   opacity: 1;
   left: 0;
+  position: static;
 }
 
 header .navbar span {
@@ -170,9 +171,11 @@ header .header-menu-icon .line {
 header .header-menu-icon .line:nth-child(1) {
   top: 10%;
 }
+
 header .header-menu-icon .line:nth-child(2) {
   top: 50%;
 }
+
 header .header-menu-icon .line:nth-child(3) {
   top: 90%;
 }
@@ -182,9 +185,11 @@ header:has(.navbar.open) .header-menu-icon .line:nth-child(1) {
   top: 50%;
 
 }
+
 header:has(.navbar.open) .header-menu-icon .line:nth-child(2) {
   transform: rotate(-45deg);
 }
+
 header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
   transform: rotate(45deg);
   top: 50%;
@@ -196,7 +201,8 @@ header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
     display: block;
   }
 
-  header .navbar, header .navbar.open {
+  header .navbar,
+  header .navbar.open {
     margin: initial;
     display: flex;
     position: static;
@@ -215,7 +221,25 @@ header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
   }
 
   header .navbar.open a {
-    width: 20px;    
+    width: 20px;
+    overflow: hidden;
+    justify-content: flex-end;
+  }
+
+  header .navbar.open a img {
+    position: absolute;
+  }
+
+  header .navbar.open a:hover img {
+    position: static;
+  }
+
+  header .navbar.open a span {
+    opacity: 0;
+  }
+
+  header .navbar.open a:hover span {
+    opacity: 1;
   }
 
   header .header-menu-icon {
@@ -223,6 +247,6 @@ header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
   }
 
   header .navbar a:hover {
-    width: 100px;
+    width: 110px;
   }
 }
