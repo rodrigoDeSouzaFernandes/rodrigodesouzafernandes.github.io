@@ -31,209 +31,216 @@
 
 <body>
   <app-header></app-header>
-  <section id="hero">
-    <div class="container">
-      <div class="title">
-        <p class="hero_greeting">Olá, meu nome é</p>
-        <h1>Rodrigo de Souza Fernandes.</h1>
-        <p class="hero_subtitle">
-          Sou Desenvolvedor Web <span>Front-End.</span>
-        </p>
-        <a class="about_btn" href="#about_me">Sobre mim</a>
-        <div class="social"></div>
-      </div>
-      <div class="img_box">
-        <img loading="lazy" class="profile_pic" src="./assets/images/cartoon-profile.jpg" alt="Foto de perfil" />
-      </div>
-    </div>
-  </section>
-  <section id="about_me">
-    <div class="container">
-      <article>
-        <h1 class="section-title animate slide-in">Sobre mim</h1>
-        <p class="animate slide-in">
-          Sou Rodrigo de Souza, um profissional dedicado e apaixonado pelo
-          universo da tecnologia, especialmente pelo desenvolvimento de
-          software. Desde o início da minha carreira, venho buscando unir
-          conhecimentos técnicos com uma mentalidade de aprendizado contínuo,
-          sempre disposto a superar desafios e entregar soluções eficientes e
-          inovadoras.
-        </p>
-        <p class="animate slide-in">
-          Atualmente, trabalho com desenvolvimento front-end, dominando
-          tecnologias como React, TypeScript e CSS, e me aventurando também no
-          back-end com .NET, o que me permite entender e construir sistemas de
-          forma completa, garantindo uma entrega robusta e escalável. Estou
-          cursando Análise e Desenvolvimento de Sistemas, o que complementa
-          minha prática diária, ampliando meu repertório técnico e
-          estratégico.
-        </p>
-        <p class="animate slide-in">
-          Além da dedicação profissional, cultivo uma rotina disciplinada que
-          inclui a prática diária de Jiu-Jitsu, musculação e natação,
-          atividades que fortalecem não só o corpo, mas também a mente,
-          promovendo foco, resiliência e equilíbrio. Essa combinação entre
-          corpo e mente reflete diretamente no meu desempenho no trabalho,
-          tornando-me um profissional mais centrado e determinado.
-        </p>
-        <p class="animate slide-in">
-          Busco constantemente aprimorar minhas habilidades de comunicação e
-          colaboração, valorizando o trabalho em equipe como essencial para o
-          sucesso coletivo. Além disso, estudo inglês regularmente, entendendo
-          que dominar esse idioma é fundamental para abrir novos caminhos e
-          ampliar minhas oportunidades profissionais e pessoais.
-        </p>
-        <p class="animate slide-in">
-          Meu objetivo é crescer dentro da área de tecnologia, assumindo novos
-          desafios, cargos mais elevados e contribuindo para projetos que
-          impactem positivamente o mundo ao nosso redor.
-        </p>
-        <p class="animate slide-in">
-          Além disso, tenho um olhar atento para o desenvolvimento pessoal,
-          acreditando que o crescimento humano é a base para a evolução
-          profissional. Por isso, invisto tempo em aprender, ampliar meu
-          networking e compartilhar conhecimento, criando uma trajetória que
-          inspire e transforme.
-        </p>
-        <p class="animate slide-in">
-          Sou movido pela vontade de evoluir, aprender e deixar um legado
-          significativo, e estou sempre aberto a novas oportunidades que me
-          permitam expandir horizontes, inovar e colaborar com pessoas e
-          projetos incríveis.
-        </p>
-      </article>
-      <img class="animate slide-in-right" src="./assets/images/rodrigo-fullbody.png" alt="rodrigo" />
-    </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-
-      <h1 class="section-title animate fade-in">Projetos</h1>
-      <p class="subtitle animate fade-in">
-        Nos últimos anos, estive totalmente focado no desenvolvimento de <u>projetos reais no ambiente profissional</u>,
-        como
-        um <b>e-commerce</b>, um <b>ERP</b> para gestão de processos empresariais e também o desenvolvimento de <b>sites
-          institucionais</b>. Esse foco na construção de soluções para o mercado, lidando com demandas reais, prazos e
-        desafios técnicos, acabou limitando meu tempo para criar projetos pessoais. Ainda assim, sempre que possível,
-        pretendo desenvolver novos projetos para este portfólio, seja para estudar novas tecnologias, seja para colocar
-        ideias em prática.
-      </p>
-      <div class="projects-list">
-        <div class="project-card grow-up">
-          <img src="./assets/projects/ionicpokeapp.gif" />
-          <div class="info">
-            <div class="top">
-              <h2>PókeApp</h2>
-              <div class="main-technologies scroll-thin">
-                <span>Angular</span>
-                <span>Ionic</span>
-                <span>TypeScript</span>
-                <span>Sass</span>
-              </div>
-            </div>
-            <p class="description scroll-thin">
-              Projeto simples que consome a API do Pokémon, desenvolvido para aprimorar minhas habilidades em Angular e
-              Ionic.
-              <br>
-              O código está organizado em componentes por função (lista, detalhes, favoritos e cards), com um
-              serviço centralizado para chamadas HTTP, usando injeção de dependência para facilitar testes e
-              reutilização.
-              <br>
-
-              A interface é limpa, simples e responsiva, focada na melhor experiência do usuário. Priorizei código claro
-              e
-              modular, aplicando padrões como Service Pattern, Dependency Injection, Observer Pattern com RxJS e
-              Separation of Concerns para manter a lógica desacoplada da apresentação.
-              <br>
-              Implementei testes unitários com
-              mocks, que garantem qualidade sem depender da API real.
-            </p>
-
-          </div>
-
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="title">
+          <p class="hero_greeting">Olá, meu nome é</p>
+          <h1>Rodrigo de Souza Fernandes.</h1>
+          <p class="hero_subtitle">
+            Sou Desenvolvedor Web <span>Front-End.</span>
+          </p>
+          <a class="about_btn" href="#about_me">Sobre mim</a>
+          <div class="social"></div>
         </div>
-        <div class="project-card grow-up">
-          <img src="./assets/projects/recipesapp.jpeg" />
-          <div class="info">
-            <div class="">
-
-            </div>
-            <div class="top">
-
-              <h2>App de receitas</h2>
-              <div class="main-technologies">
-                <span>React</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-            <p class="description scroll-thin">
-              Este foi o último projeto do módulo de front-end na Trybe, com uma proposta diferente dos anteriores: o
-              desenvolvimento voltado para mobile. Foi, até aquele momento, o projeto mais completo que desenvolvi,
-              aplicando na prática tudo que aprendi nos seis primeiros meses de contato com programação.
-              <br>
-              O desenvolvimento foi em grupo, junto com Douglas Ferreira e Daniel de Sousa Rodrigues. Optamos por
-              utilizar Context API para gestão de estado e comunicação entre componentes. Trabalhamos com metodologias
-              ágeis, cumprindo e até antecipando nossas metas — finalizamos o projeto dois dias antes do prazo.
-              <br>
-
-              O layout foi todo construído com CSS puro, com exceção do carousel na página de detalhes, onde utilizamos
-              uma biblioteca para facilitar. Por ser um projeto desenvolvido durante minha fase inicial nos estudos, a
-              interface não está tão refinada, mas o foco foi consolidar os conhecimentos em lógica, React e boas
-              práticas de desenvolvimento mobile-first.
-              <br>
-
-              Foi uma experiência extremamente enriquecedora, que marcou minha evolução na transição para o
-              desenvolvimento back-end.
-            </p>
-
-          </div>
-        </div>
-        <div class="project-card grow-up">
-          <img src="./assets/projects/countdown.jpeg" />
-          <div class="info">
-            <div class="top">
-              <h2>Trybe Countdown</h2>
-              <div class="main-technologies">
-                <span>React</span>
-                <span>Javascript</span>
-              </div>
-
-            </div>
-            <p class="description scroll-thin">
-              Projeto desenvolvido durante minha fase de estudos na Trybe, como resposta a um desafio proposto em sala
-              pelo instrutor Ícaro Harry para a turma 08. A ideia era criar um contador regressivo que marcasse o tempo
-              dos intervalos durante as aulas.
-              <br>
-              Aproveitei a proposta como uma oportunidade de acelerar meu aprendizado em React, que na época eu havia
-              começado a estudar há menos de uma semana. Foi um fim de semana intenso, de muitos desafios, onde pude
-              consolidar conceitos fundamentais do desenvolvimento com React, como estado, ciclo de vida dos componentes
-              e manipulação de tempo.
-              <br>
-
-              Como funcionalidade extra, incluí também uma contagem regressiva até a data da formatura da turma 08, a
-              "turma do infinito".
-              <br>
-
-              Apesar de simples visualmente, foi um projeto muito significativo na minha jornada, especialmente por
-              representar uma das minhas primeiras experiências práticas com React.
-            </p>
-
-          </div>
-
-
+        <div class="img_box">
+          <img loading="lazy" class="profile_pic" src="./assets/images/cartoon-profile.jpg" alt="Foto de perfil" />
         </div>
       </div>
-    </div>
-  </section>
-  <section id="abilities">
-    <div class="container">
+    </section>
+    <section id="about_me">
+      <div class="container">
+        <article>
+          <h1 class="section-title animate slide-in">Sobre mim</h1>
+          <p class="animate slide-in">
+            Sou Rodrigo de Souza, um profissional dedicado e apaixonado pelo
+            universo da tecnologia, especialmente pelo desenvolvimento de
+            software. Desde o início da minha carreira, venho buscando unir
+            conhecimentos técnicos com uma mentalidade de aprendizado contínuo,
+            sempre disposto a superar desafios e entregar soluções eficientes e
+            inovadoras.
+          </p>
+          <p class="animate slide-in">
+            Atualmente, trabalho com desenvolvimento front-end, dominando
+            tecnologias como React, TypeScript e CSS, e me aventurando também no
+            back-end com .NET, o que me permite entender e construir sistemas de
+            forma completa, garantindo uma entrega robusta e escalável. Estou
+            cursando Análise e Desenvolvimento de Sistemas, o que complementa
+            minha prática diária, ampliando meu repertório técnico e
+            estratégico.
+          </p>
+          <p class="animate slide-in">
+            Além da dedicação profissional, cultivo uma rotina disciplinada que
+            inclui a prática diária de Jiu-Jitsu, musculação e natação,
+            atividades que fortalecem não só o corpo, mas também a mente,
+            promovendo foco, resiliência e equilíbrio. Essa combinação entre
+            corpo e mente reflete diretamente no meu desempenho no trabalho,
+            tornando-me um profissional mais centrado e determinado.
+          </p>
+          <p class="animate slide-in">
+            Busco constantemente aprimorar minhas habilidades de comunicação e
+            colaboração, valorizando o trabalho em equipe como essencial para o
+            sucesso coletivo. Além disso, estudo inglês regularmente, entendendo
+            que dominar esse idioma é fundamental para abrir novos caminhos e
+            ampliar minhas oportunidades profissionais e pessoais.
+          </p>
+          <p class="animate slide-in">
+            Meu objetivo é crescer dentro da área de tecnologia, assumindo novos
+            desafios, cargos mais elevados e contribuindo para projetos que
+            impactem positivamente o mundo ao nosso redor.
+          </p>
+          <p class="animate slide-in">
+            Além disso, tenho um olhar atento para o desenvolvimento pessoal,
+            acreditando que o crescimento humano é a base para a evolução
+            profissional. Por isso, invisto tempo em aprender, ampliar meu
+            networking e compartilhar conhecimento, criando uma trajetória que
+            inspire e transforme.
+          </p>
+          <p class="animate slide-in">
+            Sou movido pela vontade de evoluir, aprender e deixar um legado
+            significativo, e estou sempre aberto a novas oportunidades que me
+            permitam expandir horizontes, inovar e colaborar com pessoas e
+            projetos incríveis.
+          </p>
+        </article>
+        <img class="animate slide-in-right" src="./assets/images/rodrigo-fullbody.png" alt="rodrigo" />
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
 
-      <h1 class="section-title animate fade-in">Habilidades</h1>
-    </div>
-  </section>
+        <h1 class="section-title animate fade-in">Projetos</h1>
+        <p class="subtitle animate fade-in">
+          Nos últimos anos, estive totalmente focado no desenvolvimento de <u>projetos reais no ambiente
+            profissional</u>,
+          como
+          um <b>e-commerce</b>, um <b>ERP</b> para gestão de processos empresariais e também o desenvolvimento de
+          <b>sites
+            institucionais</b>. Esse foco na construção de soluções para o mercado, lidando com demandas reais, prazos e
+          desafios técnicos, acabou limitando meu tempo para criar projetos pessoais. Ainda assim, sempre que possível,
+          pretendo desenvolver novos projetos para este portfólio, seja para estudar novas tecnologias, seja para
+          colocar
+          ideias em prática.
+        </p>
+        <div class="projects-list">
+          <div class="project-card grow-up">
+            <img src="./assets/projects/ionicpokeapp.gif" />
+            <div class="info">
+              <div class="top">
+                <h2>PókeApp</h2>
+                <div class="main-technologies scroll-thin">
+                  <span>Angular</span>
+                  <span>Ionic</span>
+                  <span>TypeScript</span>
+                  <span>Sass</span>
+                </div>
+              </div>
+              <p class="description scroll-thin">
+                Projeto simples que consome a API do Pokémon, desenvolvido para aprimorar minhas habilidades em Angular
+                e
+                Ionic.
+                <br>
+                O código está organizado em componentes por função (lista, detalhes, favoritos e cards), com um
+                serviço centralizado para chamadas HTTP, usando injeção de dependência para facilitar testes e
+                reutilização.
+                <br>
 
+                A interface é limpa, simples e responsiva, focada na melhor experiência do usuário. Priorizei código
+                claro
+                e
+                modular, aplicando padrões como Service Pattern, Dependency Injection, Observer Pattern com RxJS e
+                Separation of Concerns para manter a lógica desacoplada da apresentação.
+                <br>
+                Implementei testes unitários com
+                mocks, que garantem qualidade sem depender da API real.
+              </p>
+
+            </div>
+
+          </div>
+          <div class="project-card grow-up">
+            <img src="./assets/projects/recipesapp.jpeg" />
+            <div class="info">
+              <div class="">
+
+              </div>
+              <div class="top">
+
+                <h2>App de receitas</h2>
+                <div class="main-technologies">
+                  <span>React</span>
+                  <span>Javascript</span>
+                </div>
+              </div>
+              <p class="description scroll-thin">
+                Este foi o último projeto do módulo de front-end na Trybe, com uma proposta diferente dos anteriores: o
+                desenvolvimento voltado para mobile. Foi, até aquele momento, o projeto mais completo que desenvolvi,
+                aplicando na prática tudo que aprendi nos seis primeiros meses de contato com programação.
+                <br>
+                O desenvolvimento foi em grupo, junto com Douglas Ferreira e Daniel de Sousa Rodrigues. Optamos por
+                utilizar Context API para gestão de estado e comunicação entre componentes. Trabalhamos com metodologias
+                ágeis, cumprindo e até antecipando nossas metas — finalizamos o projeto dois dias antes do prazo.
+                <br>
+
+                O layout foi todo construído com CSS puro, com exceção do carousel na página de detalhes, onde
+                utilizamos
+                uma biblioteca para facilitar. Por ser um projeto desenvolvido durante minha fase inicial nos estudos, a
+                interface não está tão refinada, mas o foco foi consolidar os conhecimentos em lógica, React e boas
+                práticas de desenvolvimento mobile-first.
+                <br>
+
+                Foi uma experiência extremamente enriquecedora, que marcou minha evolução na transição para o
+                desenvolvimento back-end.
+              </p>
+
+            </div>
+          </div>
+          <div class="project-card grow-up">
+            <img src="./assets/projects/countdown.jpeg" />
+            <div class="info">
+              <div class="top">
+                <h2>Trybe Countdown</h2>
+                <div class="main-technologies">
+                  <span>React</span>
+                  <span>Javascript</span>
+                </div>
+
+              </div>
+              <p class="description scroll-thin">
+                Projeto desenvolvido durante minha fase de estudos na Trybe, como resposta a um desafio proposto em sala
+                pelo instrutor Ícaro Harry para a turma 08. A ideia era criar um contador regressivo que marcasse o
+                tempo
+                dos intervalos durante as aulas.
+                <br>
+                Aproveitei a proposta como uma oportunidade de acelerar meu aprendizado em React, que na época eu havia
+                começado a estudar há menos de uma semana. Foi um fim de semana intenso, de muitos desafios, onde pude
+                consolidar conceitos fundamentais do desenvolvimento com React, como estado, ciclo de vida dos
+                componentes
+                e manipulação de tempo.
+                <br>
+
+                Como funcionalidade extra, incluí também uma contagem regressiva até a data da formatura da turma 08, a
+                "turma do infinito".
+                <br>
+
+                Apesar de simples visualmente, foi um projeto muito significativo na minha jornada, especialmente por
+                representar uma das minhas primeiras experiências práticas com React.
+              </p>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="abilities">
+      <div class="container">
+
+        <h1 class="section-title animate fade-in">Habilidades</h1>
+      </div>
+    </section>
+  </main>
 </body>
-
-
 
 </html>

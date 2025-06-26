@@ -1,3 +1,7 @@
+#about_me {
+    user-select: none;
+}
+
 #about_me .container {
     padding-block: 6rem;
     display: flex;
