@@ -127,4 +127,5 @@ class HeaderComponent extends HTMLElement {
   }
 }
 
+//Define a classe HeaderComponent como um web component customizado na aplicação.
 customElements.define('app-header', HeaderComponent);

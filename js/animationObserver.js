@@ -10,7 +10,7 @@ const animationObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.3,
+    threshold: 0.3, //indica o quanto do elemento precisa estar visivel.
     rootMargin: "0px 0px -50px 0px",
   }
 );

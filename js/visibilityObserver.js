@@ -9,6 +9,7 @@ customElements.whenDefined('app-header').then(() => {
 })
 
 if (hero) {
+  //Controla a visibilidade do elemento header na página home
   const headerVisibilityObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
