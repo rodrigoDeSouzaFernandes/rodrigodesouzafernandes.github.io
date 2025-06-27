@@ -5,10 +5,10 @@
 
     --color-primary: #2F6193;
     --color-blue: #0A66C2;
-    --color-red: #B22222;
+    --color-red: #e63946;
     --color-black: #252525;
     --color-black-transparent: #25252590;
-
+    --background: #f9f9f9;
     --breakpoint-mobile: 600px;
 }
 

@@ -14,6 +14,13 @@ header {
   z-index: 1;
 }
 
+header .link-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 header .name {
   color: var(--color-primary);
   font-weight: 600;
@@ -196,10 +203,14 @@ header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   header .lastname {
     display: block;
   }
+}
+
+/* @media screen and (min-width: 600px) {
+
 
   header .navbar,
   header .navbar.open {
@@ -249,4 +260,4 @@ header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
   header .navbar a:hover {
     width: 110px;
   }
-}
+} */

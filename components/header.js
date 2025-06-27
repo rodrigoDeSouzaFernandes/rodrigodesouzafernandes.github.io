@@ -18,6 +18,15 @@ const navbarLinks = [
     "ariaLabel": null
   },
   {
+    "href": "/pages/contact.html",
+    "icon": "../assets/icons/contact.png",
+    "alt": "Ícone de contato",
+    "text": "Contato",
+    "target": null,
+    "rel": null,
+    "ariaLabel": null
+  },
+  {
     "href": "/assets/curriculo_rodrigo_dev_frontend.pdf",
     "icon": "../assets/icons/cv.png",
     "alt": "Ícone de currículo",
@@ -26,6 +35,7 @@ const navbarLinks = [
     "rel": "noopener noreferrer",
     "ariaLabel": "Abrir currículo em nova aba"
   },
+
   {
     "href": "https://www.linkedin.com/in/rodrigo-de-souza-fernandes",
     "icon": "../assets/logos/linkedin.png",
@@ -45,6 +55,10 @@ class HeaderComponent extends HTMLElement {
     const headerContainer = document.createElement('div')
     headerContainer.classList.add('header-container')
 
+    const linkToHome = document.createElement('a');
+    linkToHome.classList.add('link-home')
+    linkToHome.href = '/#';
+
     const profileImg = document.createElement('img');
     profileImg.classList.add("profile-img");
     profileImg.src = "../assets/images/rodrigo.jpeg";
@@ -53,6 +67,9 @@ class HeaderComponent extends HTMLElement {
     const name = document.createElement('p');
     name.innerHTML = "Rodrigo <span class='lastname'>de Souza Fernandes</span>";
     name.classList.add("name");
+
+    linkToHome.appendChild(profileImg)
+    linkToHome.appendChild(name)
 
     const button = document.createElement('button');
     button.classList.add('header-menu-icon');
@@ -91,8 +108,7 @@ class HeaderComponent extends HTMLElement {
 
     })
 
-    headerContainer.appendChild(profileImg);
-    headerContainer.appendChild(name);
+    headerContainer.appendChild(linkToHome);
     headerContainer.appendChild(button);
     headerContainer.appendChild(nav);
 
@@ -101,7 +117,6 @@ class HeaderComponent extends HTMLElement {
     headerElement.appendChild(headerContainer)
     this.appendChild(headerElement);
 
-    // Menu toggle
     button.addEventListener('click', () => {
       const nav = headerElement.querySelector('.navbar');
       nav.classList.toggle('open');
