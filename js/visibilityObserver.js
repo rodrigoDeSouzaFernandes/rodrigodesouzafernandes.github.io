@@ -8,8 +8,6 @@ customElements.whenDefined('app-header').then(() => {
   }
 })
 
-console.log({hero, header: header})
-
 if (hero) {
   const headerVisibilityObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {

@@ -57,6 +57,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transform-style: preserve-3d;
 }
 
 #hero .profile_pic {
@@ -67,7 +68,7 @@
     object-fit: cover;
     object-position: top;
     transition: scale .5s, box-shadow .5s, object-position 1s;
-    animation: fade-in 1s linear 1s both
+    animation: static-fade-in 1s linear 1s both
 }
 
 #hero .img_box:hover .profile_pic {
