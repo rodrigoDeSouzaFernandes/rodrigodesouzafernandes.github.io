@@ -12,8 +12,7 @@ Este projeto foi construído com **JavaScript puro**, **HTML5** e **CSS3**, adot
 
 ## 🌐 Acesse
 
-- 🔗 [Portfólio Online](https://seu-portfolio.vercel.app)
-- 📄 [Currículo PDF](./assets/curriculo_rodrigo_dev_frontend.pdf)
+- 🔗 [Portfólio Online](https://rodrigodesouzafernandes.github.io/)
 
 ---
 
