@@ -74,10 +74,12 @@ header .navbar {
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.30);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: flex-start;
   gap: 2rem;
   padding: 2rem;
+  width: calc((100vw - 800px) /2 + 150px);
+  min-width: 200px;
 }
 
 header .navbar.open {
@@ -209,7 +211,7 @@ header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
   }
 }
 
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
 
   header .navbar,
@@ -260,4 +262,4 @@ header:has(.navbar.open) .header-menu-icon .line:nth-child(3) {
   header .navbar a:hover {
     width: 110px;
   }
-} */
+}
