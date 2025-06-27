@@ -1,6 +1,6 @@
 # 💼 Portfólio Pessoal - Rodrigo de Souza Fernandes
 
-Este é meu portfólio como Desenvolvedor Front-End Web, criado **sem frameworks** — utilizando apenas **JavaScript puro (Vanilla JS)**, **HTML5** e **CSS3**. Nele apresento minha trajetória, habilidades, projetos reais desenvolvidos profissionalmente e formas de contato.
+Este é meu portfólio como Desenvolvedor Front-End Web, criado **sem frameworks** — utilizando apenas **JavaScript puro (Vanilla JS)**, **HTML5** e **CSS3**. Nele apresento minha trajetória, habilidades e projetos.
 
 ---
 
